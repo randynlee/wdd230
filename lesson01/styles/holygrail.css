@@ -1,7 +1,13 @@
 body {
     display: grid;
     height: 100vh;
-    grid-template: auto auto auto / 300px 1fr auto;
+    /* grid-template: auto auto auto / 300px 1fr auto; */
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1.6fr 0.4fr; 
+    grid-template-rows: 0.5fr 0.3fr 2.7fr 0.5fr; 
+    gap: 0px 0px; 
+    margin: 0;
+    padding:0;
   }
   
   header {
