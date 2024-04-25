@@ -87,6 +87,10 @@ footer {
     color: white;
 }
 #lastModified {
-    font-size: small;
+    font-size: 15px;
     color: yellow;
+}
+footer img {
+    vertical-align: middle;
+    padding: 10px;
 }
