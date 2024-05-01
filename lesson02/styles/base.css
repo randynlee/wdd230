@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500&family=Source+Sans+3&display=swap');
+
+body {
+    font-family: 'Source Sans 3', Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2D82B7;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+h1 {
+    margin-bottom: 0.25em;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+section {
+    border-radius: 10px;
+    background-color: lightgrey;
+    border: solid 1px black;
+    overflow: hidden;
+}
+h3 {
+    margin: 0;
+    background: #07004D;
+    color: white;
+    padding-left: 1em;
+}
+section .cardcontent {
+    padding: 0 10px;
+    font-size: 1.05em;
+}
+section img {
+    width: calc(100% - 2px);
+    display: block;
+    margin: 0 auto;
+    border: solid 1px black;
+    max-width: 375px;
+}
+
+footer {
+    background-color: #2D82B7;
+    text-align: center;
+    padding: 1em;
+    color: white;
+    font-size: 25px;
+}
