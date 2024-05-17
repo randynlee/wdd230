@@ -105,10 +105,9 @@ nav ul {
 nav a{
     display: block;
     text-align: center;
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 1rem;
-    font-size: 1.25rem;
 }
 
 #hero {
@@ -124,13 +123,19 @@ nav a{
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
 }
 #hero-msg h1 {
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Allerta', Tahoma, sans-serif;
+    color: white;
 }
+#hero-msg h4 {
+    color: white;
+    font-size: 1.25rem;
+}
+
 .button-box {
     padding-top: 60px;
 }
