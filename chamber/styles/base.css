@@ -123,17 +123,17 @@ nav a{
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
 }
 #hero-msg h1 {
     font-size: 70px;
     font-family: 'Allerta', Tahoma, sans-serif;
-    color: white;
 }
 #hero-msg h4 {
-    color: white;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    text-shadow: .5px .5px white;
 }
 
 .button-box {
