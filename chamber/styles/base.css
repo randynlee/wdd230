@@ -72,7 +72,7 @@ header img {
     padding-left: 20px;
 }
 
-#menu {
+/* #menu {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
@@ -80,6 +80,9 @@ header img {
  	position: absolute;
 	top: 1rem;
 	right: 1rem;
+} */
+#menu {
+    display: block;
 }
 #menu::before {
 	content: "☰";
@@ -88,18 +91,26 @@ header img {
 	content: "❎";
 }
 
-.open li {
+nav.open ul {
+    display: flex;
+    flex-direction: column;
+}
+.nav {
+    display: none;
+}
+/* .open li {
     display: block;
     width: 100%;
   }
 .open li a {
 	display: block;
-}
+} */
 
 nav {
     background-color: #2ea6bc;
 }
 nav ul {
+    display: none; /* new */
     list-style-type: none;
 }
 nav a{
