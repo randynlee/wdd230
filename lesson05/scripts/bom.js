@@ -1,6 +1,7 @@
 const input = document.getElementById("favchap");
 const button = document.querySelector("button");
 const list = document.querySelector("ul");
+const clearButton = document.querySelector("#clearAll");
 
 button.addEventListener('click', () => {
     if (input.value != '') {
@@ -17,4 +18,10 @@ button.addEventListener('click', () => {
         input.focus();
         input.value = '';
     }
+});
+
+clearButton.addEventListener('click', () => {
+    list.innerHTML = '';
+    input.focus;
+
 });
