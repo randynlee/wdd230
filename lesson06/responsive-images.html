@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple</title>
+    <meta name="author" content="Randy Lee">
+    <meta name="description" content="This page focuses on applying the srcset attribute to images using the picture and source elements.">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/Rome-Temple-500x250.webp" media="(max-width: 500px)">
+                <source srcset="images/Rome-Temple-1000x500.webp" media="(max-width: 1000px)">
+                <img src="images/Rome-Temple-1500x750.webp" alt="table setting" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
