@@ -18,7 +18,12 @@
 </head>
 <body>
     <header>
-       <img src="images/ivins-city-chamber.png" alt="Ivins Chamber Logo" height="125" width="144">
+       <!-- <img id="logo" src="images/ivins-city-chamber.webp" alt="Ivins Chamber Logo"> -->
+       <picture>
+        <source media="(min-width:650px)" srcset="images/ivins-city-chamber.webp">
+        <source media="(min-width:465px)" srcset="images/ivins-city-chamber100.webp">
+        <img src="iimages/ivins-city-chamber.webp" alt="Ivins Chamber Logo" style="width:auto;">
+      </picture>
        <button class="joinButton">Join Us</button>
        <button class="memberButton">Member Directory</button>
        <div id="mode">🌒</div>
@@ -34,12 +39,18 @@
     </nav>
     <main class="home-grid">
         <section id="hero-box">
-            <img class="hero-image" src="images/ivins-canyon2.webp" alt="Canyon near Ivins">
-            <div class="hero-msg">
+            <!-- <img class="hero-image" src="images/ivins-canyon2.webp" alt="Canyon near Ivins"> -->
+           
+            <picture class="hero-image">
+                <source media="(max-width: 505px)" srcset="images/wdd230-org-small.webp">
+                <source media="(max-width: 800px)" srcset="images/wdd230-org-medium.webp">
+                <img src="images/wdd230-org-large.webp" alt="wdd230 large image" style="width:auto;">
+            </picture>
+            <!-- <div class="hero-msg">
                 <h1>IVINS CHAMBER OF COMMERCE</h1>
                 <p>Engage, Empower, Educate. For the Greater Success of Local Business</p>
                 <button class="heroButton">Join Us!</button>
-            </div>
+            </div> -->
         </section>
             <div id="joinBox">
                 <img class="boxImage" src="images/joinBlurb.webp" alt="Join blurb" style="width: 100px;">
@@ -59,7 +70,11 @@
             <div id="weatherBox">
                 <img class="boxImage" src="images/weatherBlurb.webp" alt="Weather blurb" style="width: 100px;">
                 <h3>TODAYS WEATHER</h3>
-                <div><p>todays weather forecast</p></div>
+                <div>
+                    <p>High: 50&deg;</p>
+                    <p>Wind Speed:</p>
+                    <p>Wind Chill: </p>
+                </div>
             </div>
             <div id="imageBox">
                 <img id="canyonPic" src="images/ivans2.jpg" alt="Ivins Canyon Two">
