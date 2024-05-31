@@ -113,9 +113,9 @@
         grid-row: 2/4;
     }
 
-    .boxImage {
+    /* .boxImage {
         width: 100px;
-    }
+    } */
 
     #contactMsg {
         grid-column: 1/-1;
