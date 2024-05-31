@@ -53,31 +53,31 @@
             </div> -->
         </section>
             <div id="joinBox">
-                <img class="boxImage" src="images/joinBlurb.webp" alt="Join blurb" style="width: 100px;">
-                <h3>Join the Chamber</h3>
+                <img class="boxImage" src="images/joinBlurb.webp" alt="Join blurb">
+                <h3>JOIN THE CHAMBER</h3>
                 <div><p>In less than three minutes you can join our leaders of Ivins.</p></div>
             </div>
             <div id="eventBox">
-                <img class="boxImage" src="images/eventsBlurb.webp" alt="Events blurb" style="width: 100px;">
+                <img class="boxImage" src="images/eventsBlurb.webp" alt="Events blurb">
                 <h3>UPCOMING EVENTS</h3>
                 <div><p>Summits, Festivals, Marathons, Contests</p></div>
             </div>
             <div id="aboutBox">
-                <img class="boxImage" src="images/aboutBlurb.webp" alt="About blurb" style="width: 100px;">
+                <img class="boxImage" src="images/aboutBlurb.webp" alt="About blurb">
                 <h3>ABOUT US</h3>
                 <div><p>Learn more about the chamber and our role in Ivins.</p></div>
             </div>
             <div id="weatherBox">
-                <img class="boxImage" src="images/weatherBlurb.webp" alt="Weather blurb" style="width: 100px;">
+                <img class="boxImage" src="images/weatherBlurb.webp" alt="Weather blurb">
                 <h3>TODAYS WEATHER</h3>
                 <div>
                     <p>High: 50&deg;</p>
-                    <p>Wind Speed:</p>
-                    <p>Wind Chill: </p>
+                    <p>Wind Speed: 15mph NW</p>
+                    <p>Wind Chill: <span id="windChill"></span>&deg;</p>
                 </div>
             </div>
             <div id="imageBox">
-                <img id="canyonPic" src="images/ivans2.jpg" alt="Ivins Canyon Two">
+                <img id="canyonPic" src="images/ivans2.webp" alt="Ivins Canyon Two">
             </div>
         <section id="contactMsg">
             <h4>CONTACT US</h4>
@@ -85,43 +85,60 @@
         </section>    
         <section id="contact">
             <div>
-                <img src="images/phoneIcon.png" alt="Phone Icon">
+                <img src="images/phoneIcon.webp" alt="Phone Icon">
                 <h4>PHONE</h4>
                 <p>435-123-1234</p>
             </div>
             <div>
-                <img src="images/emailIcon.png" alt="Email Icon">
+                <img src="images/emailIcon.webp" alt="Email Icon">
                 <h4>EMAIL</h4>
                 <p>info@ivinschamber.com</p>
             </div>
             <div>
-                <img src="images/mailingIcan.png" alt="Mailing Address Icon">
+                <img src="images/mailingIcon.webp" alt="Mailing Address Icon">
                 <h4>MAILING ADDRESS</h4>
                 <p>150 N Main St Suite 104</p>
                 <p>Ivins Utah, 98471</p>
             </div>
             <div>
-                <img src="images/streetIcon.png" alt="Stree Address Icon">
+                <img src="images/streetIcon.webp" alt="Stree Address Icon">
                 <h4>STREET ADDRESS</h4>
                 <p>150 N Main St</p>
                 <p>Ivins Utah, 98471</p>
             </div>
         </section>
         <section id="local">
-            <a href="#"><img src="images/logo-backup-footer.png" alt="Royal Flamingo"></a>
-            <a href="#"><img src="images/Sentierre+Logo+Primary1@4x.png" alt="Sage Wood Homes">
-            <a href="#"><img src="images/Big_Ben_s_Final_Logos_Horizontal_Logo_-_Blue.png" alt="Sage Wood Homes"></a>
+            <a href="#"><img src="images/logo-backup-footer.webp" alt="Tuacahn Amphitheatre"></a>
+            <a href="#"><img src="images/Sentierre+Logo+Primary1@4x.webp" alt="Sentierre Padre Canyon Resort">
+            <a href="#"><img src="images/Big_Ben_s_Final_Logos_Horizontal_Logo_-_Blue.webp" alt="Big Ben's Moving Storage"></a>
             <a href="#"><img src="images/royal-flamingo_60x70.webp" alt="Royal Flamingo"></a>
-            <a href="#"><img src="images/redMountain_119x70.webp" alt="Royal Flamingo"></a>
-            <a href="#"><img src="images/logo_79x75.webp" alt="Royal Flamingo"></a>
+            <a href="#"><img src="images/redMountain_119x70.webp" alt="Red Mountain Electric"></a>
+            <a href="#"><img src="images/logo_79x75.webp" alt="iBB cyclery"></a>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="copyrightYear"></span> | Randy Lee | WDD 230 Web Project
-        <p id="lastModified"></p>
+        <section id="footerInfo">
+            <div id="logoInfo">
+                <img src="images/ivins-city-chamber100.webp" alt="Chamber logo">
+            </div>
+            <div id="addressInfo">
+                <h4>Ivins Chamber of Commerce</h4>
+                <p>150 N Main St</p>
+                <p>Ivins Utah, 98471</p>
+            </div>
+            <div id="contactInfo">
+                <p>435-123-1234</p>
+                <p>info@ivinschamber.com</p>
+            </div>
+        </section>
+        <div id="devInfo">
+            <p>&copy; <span id="copyrightYear"></span> | Randy Lee | WDD 230 Web Project</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamButton.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

@@ -180,6 +180,23 @@ main {
     header {
         justify-content: center;
     }
+    #joinBox, #eventBox, #aboutBox, #weatherBox {
+        font-size: 10px;
+        width: 300px;
+        margin: auto;
+    }
+    .boxImage {
+        width: 70px;
+    }
+    #local {
+        display: none;
+    }
+    #footerInfo {
+        flex-direction: column;
+    }
+    #logoInfo, #addressInfo, #contactInfo {
+        margin-bottom: 20px;
+    }
 }
 #contact {
     text-align: center;
@@ -194,3 +211,9 @@ footer {
     grid-column: 1 / 3;
     color: white;
 }
+
+#footerInfo {
+    display: flex;
+    justify-content: space-around;
+}
+

@@ -47,6 +47,10 @@
     nav ul li {
         flex: 1 1 100%;
     }
+
+    #devInfo {
+        padding-top: 50px;
+    }
     
     
     .navigation {
@@ -108,6 +112,11 @@
         grid-column: 3/4;
         grid-row: 2/4;
     }
+
+    .boxImage {
+        width: 100px;
+    }
+
     #contactMsg {
         grid-column: 1/-1;
         grid-row: 4/5;
