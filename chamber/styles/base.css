@@ -97,9 +97,10 @@ main {
     grid-column: 1 / -1;
     width: 100%;
 }
-.hero-image {
+/hero-image {
     max-height: 550px;
     object-fit: cover;
+    width: auto;
 } 
 
 
