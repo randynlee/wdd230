@@ -97,7 +97,7 @@ main {
     grid-column: 1 / -1;
     width: 100%;
 }
-/hero-image {
+.hero-image {
     max-height: 550px;
     object-fit: cover;
     width: auto;
@@ -198,6 +198,20 @@ main {
         margin-bottom: 20px;
     }
 }
+#chamberAbout, #chamberDemo, #chamberEconomy, #chamberArts {
+    box-shadow: 4px 5px 10px #2ea6bc;
+    border-radius: 5px;
+    border: 5px transparent;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    padding: 10%;
+}
+
+#discoveryInfo > div {
+    margin: 20px;
+  }
+
 #contact {
     text-align: center;
 }

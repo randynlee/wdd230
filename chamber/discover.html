@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivins Chamber of Commerce</title>
+    <meta name="author" content="Randy Lee">
+    <meta name="description" content="The website for the Ivins Chamber of Commerce. Join us to elevate your business, view upcoming community events, and support.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Randy Lee - WDD 230 - The Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://randynlee.github.io/wdd230/images/salt-lake-city.jpg">
+    <meta property="og:url" content="https://randynlee.github.io/wdd230/chamber/">
+</head>
+<body>
+    <header>
+       <picture>
+        <source media="(min-width:650px)" srcset="images/ivins-city-chamber.webp">
+        <source media="(min-width:465px)" srcset="images/ivins-city-chamber100.webp">
+        <img src="iimages/ivins-city-chamber.webp" alt="Ivins Chamber Logo" style="width:auto;">
+      </picture>
+       <button class="joinButton">Join Us</button>
+       <button class="memberButton">Member Directory</button>
+       <div id="mode">🌒</div>
+    </header>
+    <button id="menu" title="Hamburger Button"></button>
+    <nav>
+    <ul class="navigation">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+    </ul>
+    </nav>
+    <main class="discover-grid">
+        
+        <div id="discoveryInfo">
+            <div id="chamberAbout">
+                <h3>ABOUT US</h3>
+                <p>The Ivins Chamber of Commerce is a membership organization whose purpose is to advance those issues of specific interest to our members. When possible, the Chamber will also work to develop, encourage, promote and protect the commercial, civic, industrial, agricultural and general business interests and the general welfare of the City of Ivins.</p>
+            </div>
+            <div id="chamberDemo">
+                <h3>DEMOGRAPHIC</h3>
+                <p>In 2022, Ivins, UT had a population of 9.17k people with a median age of 52.4 and a median household income of $67,354. Between 2021 and 2022 the population of Ivins, UT grew from 8,786 to 9,174, a 4.42% increase and its median household income grew from $64,786 to $67,354, a 3.96% increase.</p>
+            </div>
+            <div id="chamberEconomy">
+                <h3>ECONOMY</h3>
+                <p>The economy of Ivins, UT employs 3.43k people. The largest industries in Ivins, UT are Construction (521 people), Retail Trade (514 people), and Professional, Scientific, & Technical Services (444 people), and the highest paying industries are Finance & Insurance ($79,661), Finance & Insurance, & Real Estate & Rental & Leasing ($78,568), and Professional, Scientific, & Technical Services ($58,684).</p>
+            </div>
+            <div id="chamberArts">
+                <h3>ARTS AND CULTURE</h3>
+                <P>Kayenta Art Village, located in the Kayenta Desert Community, features art galleries, a theater, and the Desert Rose Labyrinth made from small stones.</P>
+                <P>The Tuacahn Center for the Arts in Ivins is the largest professional outdoor theater in Utah, employing between 100 and 250 people. It features a 1,920-seat outdoor amphitheater, and an indoor theater.</P>
+                <P>Fire Lake Park at Ivins Reservoir opened in 2018, and features a beach and swim area.</P>
+                <P>Resorts in Ivins include Red Mountain Resort, Movara Resort, Sentierre Resort, and Black Desert Resort.</P>
+            </div>
+        </div>
+        <div id="discoveryGallery">
+            <div>
+                <img class="discoverImage" src="images/ivins1.jpg" loading="lazy" alt="Ivins golf course">
+                <figcaption>Black Desert Golf Course</figcaption>
+            </div>
+            <div>
+                <img class="discoverImage" src="images/ivins2.jpeg" loading="lazy" alt="Falls">
+                <figcaption>Tuacahn Center for the Arts</figcaption>
+            </div>
+            <div>
+                <img class="discoverImage" src="images/ivins3.jpg" loading="lazy" alt="Tuacahn Amphitheatre">
+                <figcaption>Gunlock Falls</figcaption>
+            </div>
+            <div>
+                <img class="discoverImage" src="images/ivins4.jpg" loading="lazy" alt="Resort">
+                <figcaption>Red Mountain Resort</figcaption>
+            </div>
+            <div>
+                <img class="discoverImage" src="images/ivins5.jpg" loading="lazy" alt="native art">
+                <figcaption>Johnson Canyon Arch trail</figcaption>
+            </div>
+            <div>
+                <img class="discoverImage" src="images/ivins6.jpg" loading="lazy" alt="east side">
+                <figcaption>West Ivins</figcaption>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footerInfo">
+            <div id="logoInfo">
+                <img src="images/ivins-city-chamber100.webp" alt="Chamber logo">
+            </div>
+            <div id="addressInfo">
+                <h4>Ivins Chamber of Commerce</h4>
+                <p>150 N Main St</p>
+                <p>Ivins Utah, 98471</p>
+            </div>
+            <div id="contactInfo">
+                <p>435-123-1234</p>
+                <p>info@ivinschamber.com</p>
+            </div>
+        </div>
+        <div id="devInfo">
+            <p>&copy; <span id="copyrightYear"></span> | Randy Lee | WDD 230 Web Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamButton.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

@@ -3,31 +3,8 @@ const button = document.querySelector("button");
 const list = document.querySelector("ul");
 // const clearButton = document.querySelector("#clearAll"); //
 
-let chaptersArray = getChapters() || [];
+let chaptersArray = getChapterList() || [];
 
-/* button.addEventListener('click', () => {
-    if (input.value != '') {
-        const li = document.createElement('li');
-        const deleteButton = document.createElement('button');
-        li.textContent = input.value;
-        deleteButton.textContent = '❌';
-        li.append(deleteButton);
-        list.append(li);
-        deleteButton.addEventListener('click', function () {
-            list.removeChild(li);
-            input.focus;
-        });
-        input.focus();
-        input.value = '';
-    }
-
-});
-
-clearButton.addEventListener('click', () => {
-    list.innerHTML = '';
-    input.focus;
-
-}); */
 
 function displayList(item) {
     let li = document.createElement('li');
@@ -42,7 +19,8 @@ function displayList(item) {
       deleteChapter(li.textContent);
       input.focus();
     });
-    console.log('Thank you');
+    input.focus();
+    input.value = '';
   }
 
 button.addEventListener('click', () => {
@@ -58,9 +36,6 @@ button.addEventListener('click', () => {
   chaptersArray.forEach(chapter => {
     displayList(chapter);
   });
-
-
-  
 
   function setChapterList() {
     localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
