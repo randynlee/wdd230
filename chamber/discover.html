@@ -30,14 +30,18 @@
     <button id="menu" title="Hamburger Button"></button>
     <nav>
     <ul class="navigation">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Discover</a></li>
+        <li><a href="/chamber/index.html">Home</a></li>
+        <li><a href="/chamber/discover.html" class="active">Discover</a></li>
         <li><a href="#">Directory</a></li>
         <li><a href="#">Join</a></li>
     </ul>
     </nav>
     <main class="discover-grid">
-        
+        <div id="discoveryVisit">
+            <h3>
+                <span class="visits">visits</span>
+            </h3>
+        </div>
         <div id="discoveryInfo">
             <div id="chamberAbout">
                 <h3>ABOUT US</h3>
@@ -51,37 +55,46 @@
                 <h3>ECONOMY</h3>
                 <p>The economy of Ivins, UT employs 3.43k people. The largest industries in Ivins, UT are Construction (521 people), Retail Trade (514 people), and Professional, Scientific, & Technical Services (444 people), and the highest paying industries are Finance & Insurance ($79,661), Finance & Insurance, & Real Estate & Rental & Leasing ($78,568), and Professional, Scientific, & Technical Services ($58,684).</p>
             </div>
+            <div id="chamberEmployment">
+                <h3>EMPLOYMENT</h3>
+                <p>From 2021 to 2022, employment in Ivins, UT grew at a rate of 7.93%, from 3.18k employees to 3.43k employees.</p>
+                <br>
+                <P>The most common employment sectors for those who live in Ivins, UT, are Construction (521 people), Retail Trade (514 people), and Professional, Scientific, & Technical Services (444 people). This chart shows the share breakdown of the primary industries for residents of Ivins, UT, though some of these residents may live in Ivins, UT and work somewhere else. Census data is tagged to a residential address, not a work address.</P>
+            </div>
             <div id="chamberArts">
                 <h3>ARTS AND CULTURE</h3>
                 <P>Kayenta Art Village, located in the Kayenta Desert Community, features art galleries, a theater, and the Desert Rose Labyrinth made from small stones.</P>
+                <br>
                 <P>The Tuacahn Center for the Arts in Ivins is the largest professional outdoor theater in Utah, employing between 100 and 250 people. It features a 1,920-seat outdoor amphitheater, and an indoor theater.</P>
+                <br>
                 <P>Fire Lake Park at Ivins Reservoir opened in 2018, and features a beach and swim area.</P>
+                <br>
                 <P>Resorts in Ivins include Red Mountain Resort, Movara Resort, Sentierre Resort, and Black Desert Resort.</P>
             </div>
         </div>
         <div id="discoveryGallery">
             <div>
-                <img class="discoverImage" src="images/ivins1.jpg" loading="lazy" alt="Ivins golf course">
+                <img class="discoverImage" src="images/ivins1.webp" alt="Ivins golf course">
                 <figcaption>Black Desert Golf Course</figcaption>
             </div>
             <div>
-                <img class="discoverImage" src="images/ivins2.jpeg" loading="lazy" alt="Falls">
+                <img class="discoverImage" src="images/ivins2.webp" loading="lazy" alt="Falls">
                 <figcaption>Tuacahn Center for the Arts</figcaption>
             </div>
             <div>
-                <img class="discoverImage" src="images/ivins3.jpg" loading="lazy" alt="Tuacahn Amphitheatre">
+                <img class="discoverImage" src="images/ivins3.webp" loading="lazy" alt="Tuacahn Amphitheatre">
                 <figcaption>Gunlock Falls</figcaption>
             </div>
             <div>
-                <img class="discoverImage" src="images/ivins4.jpg" loading="lazy" alt="Resort">
+                <img class="discoverImage" src="images/ivins4.webp" loading="lazy" alt="Resort">
                 <figcaption>Red Mountain Resort</figcaption>
             </div>
             <div>
-                <img class="discoverImage" src="images/ivins5.jpg" loading="lazy" alt="native art">
+                <img class="discoverImage" src="images/ivins5.webp" loading="lazy" alt="native art">
                 <figcaption>Johnson Canyon Arch trail</figcaption>
             </div>
             <div>
-                <img class="discoverImage" src="images/ivins6.jpg" loading="lazy" alt="east side">
+                <img class="discoverImage" src="images/ivins6.webp" loading="lazy" alt="west side">
                 <figcaption>West Ivins</figcaption>
             </div>
         </div>
@@ -110,5 +123,6 @@
     <script src="scripts/hamButton.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 </html>

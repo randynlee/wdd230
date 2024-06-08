@@ -5,6 +5,10 @@ const joinBox = document.querySelector("#joinBox");
 const eventBox = document.querySelector("#eventBox");
 const aboutBox = document.querySelector("#aboutBox");
 const weatherBox = document.querySelector("#weatherBox");
+const chamberAbout = document.querySelector("#chamberAbout");
+
+
+
 
 
 modeButton.addEventListener("click", () => {
@@ -21,6 +25,8 @@ modeButton.addEventListener("click", () => {
 		aboutBox.style.color = "#fff";
 		weatherBox.style.background = "#000";
 		weatherBox.style.color = "#fff";
+		chamberAbout.style.background = "#000";
+		chamberAbout.style.color = "#fff";
 		modeButton.textContent = "🌙";
 	} else {
 		main.style.background = "#eee";
@@ -35,6 +41,8 @@ modeButton.addEventListener("click", () => {
 		aboutBox.style.color = "#000";
 		weatherBox.style.background = "#eee";
 		weatherBox.style.color = "#000";
+		chamberAbout.style.background = "#eee";
+		chamberAbout.style.color = "#000";
 		modeButton.textContent = "🌒";
 	}
 });

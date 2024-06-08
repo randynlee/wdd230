@@ -138,18 +138,33 @@
         margin-bottom: 2rem;
     }
 
+#discoveryVisit {
+        grid-row: 1/1;
+        grid-column: 1/4;
+        text-align: center;
+    }
+
 #dicoveryInfo {
     grid-column: 1/3;
+    grid-row: 2/2;
     display: inline-flex;
     flex-direction: column;
     width: 500px;
-    
-}
-#discoveryGallery {
-    grid-column: 2/4;
-    padding-left: 150px;
 }
 
+
+#discoveryGallery {
+    grid-column: 2/4;
+    grid-row: 2/2;
+    padding-left: 150px;
+}
+.discoverImage:hover {
+    box-shadow: 0 0 50px #007587;
+}
+
+figcaption {
+    padding-bottom: 20px;
+}
 
     footer {
         grid-column: 1/-1;

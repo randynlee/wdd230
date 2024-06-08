@@ -198,7 +198,7 @@ main {
         margin-bottom: 20px;
     }
 }
-#chamberAbout, #chamberDemo, #chamberEconomy, #chamberArts {
+#chamberAbout, #chamberDemo, #chamberEconomy, #chamberEmployment, #chamberArts {
     box-shadow: 4px 5px 10px #2ea6bc;
     border-radius: 5px;
     border: 5px transparent;
@@ -206,6 +206,11 @@ main {
     overflow: hidden;
     text-align: center;
     padding: 10%;
+}
+
+
+.discoverImage {
+    border-radius: 5%;
 }
 
 #discoveryInfo > div {
