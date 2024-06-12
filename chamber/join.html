@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivins Chamber of Commerce - Join</title>
+    <meta name="author" content="Randy Lee">
+    <meta name="description" content="The website for the Ivins Chamber of Commerce. Join us to elevate your business, view upcoming community events, and support.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Randy Lee - WDD 230 - The Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://randynlee.github.io/wdd230/images/salt-lake-city.jpg">
+    <meta property="og:url" content="https://randynlee.github.io/wdd230/chamber/">
+</head>
+<body>
+    <header>
+       <picture>
+        <source media="(min-width:650px)" srcset="images/ivins-city-chamber.webp">
+        <source media="(min-width:465px)" srcset="images/ivins-city-chamber100.webp">
+        <img src="iimages/ivins-city-chamber.webp" alt="Ivins Chamber Logo" style="width:auto;">
+      </picture>
+       <button class="joinButton" href="join.html">Join Us</button>
+       <button class="memberButton">Member Directory</button>
+       <div id="mode">🌒</div>
+    </header>
+    <button id="menu" title="Hamburger Button"></button>
+    <nav>
+    <ul class="navigation">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+    </ul>
+    </nav>
+    <main class="join-grid">
+        <div id="joinTitle">
+            <h1>Join Now</h1>
+            <P>We aim to make business more profitable and make Ivins a better place to live, work and play. Ivins' most successful businesses understand the benefits of Chamber membership. We invite you to become a part of our dynamic organization</P>
+        </div>
+        <div id="memberType">
+            <table>
+                <caption>
+                    Membership Types and Fees
+                  </caption>
+                  <tbody>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td id="np">Non Profit</td>
+                      <td id="bronze">Bronze<br>$500</td>
+                      <td id="silver">Silver<br>$1000</td>
+                      <td id="gold">Gold<br>$1500</td>
+                    </tr>
+                    <tr>
+                      <td>Free admission to most Ivins Chamber events</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <td>Marketing support to grow your brand</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <td>Listing in online membership directory</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <td>Free one-on-one business coaching, low cost workshops and small business loans</td>
+                      <td>&nbsp;</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <td>Electronic copy of membership list</td>
+                      <td>&nbsp;</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <td>Letters of introduction to 10 members of your choice</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <td>Best Practices Article</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <td>Exclusive invitations to Top Investor</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>✔️</td>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <td>Exclusive invitations to CEO Roundtable dinners</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <td>Advertising package  ($4,350 value)</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>✔️</td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+        <div id="memberForm">
+        <form method="get" action="thankyou.html" class="wf1">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First name: <input type="text" name="fname" id="fname" placeholder="Enter your first name" required></label>
+                <label>Last name: <input type="text" name="lname" id="lname" placeholder="Enter your last name" required></label>
+                <label>Title or position: <input type="text" name="title" id="title" placeholder="Enter title or position" pattern="[a-zA-Z -]{7,}" title="Only alpha characters, hyphens, and spaces with a minimum of seven characters are allowed." required></label>
+                <label>Email address: <input type="email" name="email" id="email" placeholder="example@example.com" required></label>
+                <label>Mobile Phone Number: <input type="tel" name="mobilePhone" id="mobilePhone" placeholder="Enter a mobile number" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business/organization's name: <input type="text" name="business" id="business" placeholder="Enter your business name" required></label>
+                <label>Membership Level:
+                <select id="membership" name="membership" required>
+                    <option value="" disabled selected>
+                  Select preffered membership level
+                    </option>
+                    <option value="NP Membership">NP Membership</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+                </label>
+                <label for="organization">Organization Description:</label>
+                <textarea id="organization" name="organization" placeholder="Your business/organization's description"></textarea>
+            </fieldset>
+            <input type="hidden" name="timeStamp" id="timeStamp">
+            <input type="submit" value="Enter My Membership" class="formButton">
+        </form>
+        </div>
+    </main>
+    <footer>
+        <div id="footerInfo">
+            <div id="logoInfo">
+                <img src="images/ivins-city-chamber100.webp" alt="Chamber logo">
+            </div>
+            <div id="addressInfo">
+                <h4>Ivins Chamber of Commerce</h4>
+                <p>150 N Main St</p>
+                <p>Ivins Utah, 98471</p>
+            </div>
+            <div id="contactInfo">
+                <p>435-123-1234</p>
+                <p>info@ivinschamber.com</p>
+            </div>
+        </div>
+        <div id="devInfo">
+            <p>&copy; <span id="copyrightYear"></span> | Randy Lee | WDD 230 Web Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamButton.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+:root {
+    --form-bg-color: ##eee;
+    --label-color: #333;
+    --input-border: 1px solid #ccc;
+}
+
+form {
+    background-color: var(--header-color);
+    padding: 20px;
+    margin: 6%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  label {
+    color: var(--label-color);
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    border: var(--input-border);
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  output {
+    display: block;
+  }
+
+  .formButton {
+    background-image: linear-gradient(#2D82B7, #07004D);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
