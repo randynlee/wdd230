@@ -3,7 +3,7 @@
 const baseURL = "https://randynlee.github.io/wdd230/";
 const linksURL = "https://randynlee.github.io/wdd230/data/links.json";
 
-const learnActivities = document.getElementById('learnActivities');
+const learnActivities = document.getElementById('learn-activity');
 
 const getLinks = async function() {
     const response = await fetch(linksURL);
