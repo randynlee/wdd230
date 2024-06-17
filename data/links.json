@@ -1,0 +1,127 @@
+{
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          {
+            "url":"https://randynlee.github.io/wdd230/lesson01/holygrail.html",
+            "title":"Layout"
+          },
+          {
+            "url":"https://codepen.io/Randy-Lee-the-animator/pen/PogVPGY",
+            "title":"JS Pen"
+          }
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url":"https://randynlee.github.io/wdd230/lesson02/media-query.html",
+            "title":"Media Query"
+          },
+          {
+            "url":"https://randynlee.github.io/wdd230/lesson02/design-principles.html",
+            "title":"Design Principles Document"
+          }
+        ]
+      }, 
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url":"https://codepen.io/Randy-Lee-the-animator/pen/NWmZOaj",
+            "title":"Psuedo-Elements Pen"
+          },
+          {
+            "url":"https://codepen.io/Randy-Lee-the-animator/pen/NWmZexZ",
+            "title":"Hamburger Pen"
+          }
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          {
+            "url":"https://codepen.io/Randy-Lee-the-animator/pen/QWRWoGv",
+            "title":"Psuedo-classes Pen"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url":"https://randynlee.github.io/wdd230/lesson05/bom.html",
+            "title":"Book of Mormon Application"
+          }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          {
+            "url":"lesson06/images/landscape.webp",
+            "title":"WebP"
+          },
+          {
+            "url":"lesson06/responsive-images.html",
+            "title":"Responsive Images"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url":"lesson07/lazyload.html",
+            "title":"Lazy Loading"
+          },
+          {
+            "url":"lesson07/bom.html",
+            "title":"BoM Local Storage"
+          }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          {
+            "url":"lesson08/tablebuild.html",
+            "title":"Table Build"
+          },
+          {
+            "url":"lesson08/index.html",
+            "title":"HTML Forms"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url":"lesson09/new-ward-members.json",
+            "title":"JSON"
+          },
+          {
+            "url":"lesson09/prophets.html",
+            "title":"Prophets"
+          }
+        ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          {
+            "url":"",
+            "title":""
+          },
+          {
+            "url":"",
+            "title":""
+          }
+        ]
+      }
+    ]
+}
+
