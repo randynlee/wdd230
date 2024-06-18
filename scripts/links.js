@@ -22,6 +22,7 @@ const displayLinks = function(data) {
             activityLink.title = link.title;
             activityLink.innerHTML = link.title;
             activityLink.target = '_blank';
+           
 
             activityList.appendChild(activityLink)
         });

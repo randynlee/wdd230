@@ -73,6 +73,7 @@ nav a:hover {
 	display: block;
 }
 
+
 h2 {
     font-display: optional;
 }
@@ -104,6 +105,13 @@ main picture img{
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+main a:link,
+main a:visited {
+  color: var(--header-bg);
+  display: inline-block;
+  margin-inline-end: 20px;
 }
 
 .herolabel {
