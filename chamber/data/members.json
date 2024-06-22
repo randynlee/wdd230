@@ -1,0 +1,66 @@
+
+ [
+    {
+      "name": "Tuacahn Ampitheatre",
+      "address": "1100 Tuacahn Drive, Ivins, Utah 84738",
+      "phone": "(800) 746-9882",
+      "website": "https://www.tuacahn.org/",
+      "image": "images/logo-backup-footer.webp",
+      "membershipLevel": "Gold",
+      "otherInformation": "A non profit arts organization"
+    },
+    {
+        "name": "Sentierre Padre Canyon Resort",
+        "address": "800 N Tuacahn Dr. Ivins, UT 84738",
+        "phone": "(435) 429-7000",
+        "website": "https://www.padrecanyonresidences.com/",
+        "image": "images/Sentierre+Logo+Primary1@4x.webp",
+        "membershipLevel": "Gold",
+        "otherInformation": "Sentierre Padre Canyon is part of Snow Canyon State Park and the Red Cliffs Desert Reserve and a great location to see and access the beauty of the area."
+      },
+      {
+        "name": "Big Bens's Moving and Storage",
+        "address": "47 E 800 S St, Ivins, UT 84738",
+        "phone": "(435) 673-8879​",
+        "website": "https://bigbensmovingservice.com/",
+        "image": "images/Big_Ben_s_Final_Logos_Horizontal_Logo_-_Blue.webp",
+        "membershipLevel": "Silver",
+        "otherInformation": "We lift more than just your furniture… We lift your family!"
+      },
+      {
+        "name": "Royal Flamingo pools & Spas",
+        "address": "485 S 175 E, Ivins, UT 84738",
+        "phone": "(801) 678-0323",
+        "website": "https://royalflamingopools.com/",
+        "image": "images/royal-flamingo_60x70.webp",
+        "membershipLevel": "Silver",
+        "otherInformation": "Our Goal and Commitment to our customers is to transform your backyard with a custom pool that will provide enjoyment for years to come."
+      },
+      {
+        "name": "Red mountain Electric",
+        "address": "134 W 200 S, Ivins, UT 84738",
+        "phone": "(435) 656-1902",
+        "website": "https://redmountainelectric.com/",
+        "image": "images/redMountain_119x70.webp",
+        "membershipLevel": "Bronze",
+        "otherInformation": "Qualified conscientious Electrical wire-man achieve customer satisfaction with proper tools, quality materials and current technology. "
+      },
+      {
+        "name": "IBB Cyclery",
+        "address": "185 E Center St Ivins, UT 84738",
+        "phone": "(435) 319-0011",
+        "website": "https://www.ibbcyclery.com/",
+        "image": "images/logo_79x75.webp",
+        "membershipLevel": "Silver",
+        "otherInformation": "As proud members of the Utah cycling community, IBB Cyclery is more than just a bike shop, we're a local hub for cyclists of all levels."
+      },
+      {
+        "name": "Troy's Custom",
+        "address": "135 South 200 West Ivins, UT 84738",
+        "phone": "(435) 673-1626",
+        "website": "https://troyscustom.com/",
+        "image": "images/troysCustom.jpg",
+        "membershipLevel": "Bronze",
+        "otherInformation": "collision repair or car restoration services, our family owned and oriented local body shop"
+      }
+    ]
