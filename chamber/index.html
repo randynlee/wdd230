@@ -17,14 +17,25 @@
     <meta property="og:url" content="https://randynlee.github.io/wdd230/chamber/">
 </head>
 <body>
+    <div id="chamberBanner">
+        <p>
+          Don't miss the Chamber of Commerce Meet and Greet on Wednesday at 7:00
+          p.m.!
+        </p>
+        <span id="closeButton" onclick="closeBanner()">✖</span>
+      </div>
     <header>
-       <picture>
+       <a href="index.html">
+        <picture>
         <source media="(min-width:650px)" srcset="images/ivins-city-chamber.webp">
         <source media="(min-width:465px)" srcset="images/ivins-city-chamber100.webp">
         <img src="iimages/ivins-city-chamber.webp" alt="Ivins Chamber Logo" style="width:auto;">
       </picture>
-       <button class="joinButton">Join Us</button>
-       <button class="memberButton">Member Directory</button>
+      </a>
+      <div class="joinButton"><a href="join.html">Join Us</a></div>
+      <div class="memberButton"><a href="directory.html">Member Directory</a></div> 
+      <!-- <button class="joinButton">Join Us</button> -->
+      <!-- <button class="memberButton">Member Directory</button> -->
        <div id="mode">🌒</div>
     </header>
     <button id="menu" title="Hamburger Button"></button>
@@ -48,31 +59,83 @@
             <div class="hero-msg">
                 <h1>IVINS CHAMBER OF COMMERCE</h1>
                 <p>Engage, Empower, Educate. For the Greater Success of Local Business</p>
-                <button class="heroButton">Join Us!</button>
+                <div class="heroButton"><a href="join.html">Join Us!</a></div>
+                <!-- <button class="heroButton">Join Us!</button> -->
             </div>
         </div>
             <div id="joinBox">
                 <img class="boxImage" src="images/joinBlurb.webp" alt="Join blurb">
                 <h3>JOIN THE CHAMBER</h3>
-                <div><p>In less than three minutes you can join our leaders of Ivins.</p></div>
+                <br>
+                <div>
+                    <p>In less than three minutes you can join our leaders of Ivins, and be part of our dynamic organization.</p>
+                    <br>
+                    <p><a href="join.html">JOIN TODAY</a></p>
+                </div>
             </div>
             <div id="eventBox">
                 <img class="boxImage" src="images/eventsBlurb.webp" alt="Events blurb">
                 <h3>UPCOMING EVENTS</h3>
-                <div><p>Summits, Festivals, Marathons, Contests</p></div>
+                <div>
+                    <p>Summits, Festivals, Marathons, Contests</p>
+                    <br>
+                    <ul>
+                        <li>Breakthrough Selling - 8/8/24</li>
+                        <li>Pastries & Politics - 8/20/24</li>
+                    </ul>
+                </div>
             </div>
             <div id="aboutBox">
                 <img class="boxImage" src="images/aboutBlurb.webp" alt="About blurb">
                 <h3>ABOUT US</h3>
-                <div><p>Learn more about the chamber and our role in Ivins.</p></div>
+                <br>
+                <div>
+                    <p>Learn more about the chamber and our role in Ivins.</p>
+                    <br>
+                    <p><a href="discover.html">DISCOVER OUR CHAMBER</a></p>
+                </div>
             </div>
             <div id="weatherBox">
                 <img class="boxImage" src="images/weatherBlurb.webp" alt="Weather blurb">
                 <h3>TODAYS WEATHER</h3>
+                <br>
                 <div>
-                    <p>High: 50&deg;</p>
-                    <p>Wind Speed: 15mph NW</p>
-                    <p>Wind Chill: <span id="windChill"></span>&deg;</p>
+                    <div id="weatherToday">
+                    <h4><span id="current-temp"></span> </h4>
+                    <figure>
+                        <img id="weather-icon" alt="Weather Icon">
+                        <figcaption id="fig1" class="weather-fig-captions"></figcaption>
+                    </figure>
+                    </div>
+                    <!-- <p>Wind Speed: 15mph NW</p>
+                    <p>Wind Chill: <span id="windChill"></span>&deg;</p> --->
+                    <h4>3 day Forecast</h4>
+                    <section class="weather" id="weather-forecast">
+                        <div>
+                            <h4><span id="forecast-day-1"></span> </h4>
+                            <h4><span id="forecast-temp-1"></span> </h4>
+                            <figure>
+                                <img id="weather-icon1" class="w-icon" alt="weather icon">
+                                <figcaption id="fig2" class="weather-fig-captions"></figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <h4><span id="forecast-day-2"></span> </h4>
+                            <h4><span id="forecast-temp-2"></span> </h4>
+                            <figure>
+                                <img id="weather-icon2" class="w-icon" alt="Weather Icon">
+                                <figcaption id="fig3" class="weather-fig-captions"></figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <h4><span id="forecast-day-3"></span> </h4>
+                            <h4><span id="forecast-temp-3"></span> </h4>
+                            <figure>
+                                <img id="weather-icon3" class="w-icon" alt="Weather Icon">
+                                <figcaption id="fig4" class="weather-fig-captions"></figcaption>
+                            </figure>
+                        </div>
+                    </section>
                 </div>
             </div>
             <div id="imageBox">
@@ -118,18 +181,19 @@
     <footer>
         <div id="footerInfo">
             <div id="logoInfo">
-                <img src="images/ivins-city-chamber100.webp" alt="Chamber logo">
+                <a href="index.html"><img src="images/ivins-city-chamber100.webp" alt="Chamber logo"></a>
             </div>
             <div id="addressInfo">
                 <h4>Ivins Chamber of Commerce</h4>
                 <p>150 N Main St</p>
-                <p>Ivins Utah, 98471</p>
+                <p>Ivins Utah, 84738</p>
             </div>
             <div id="contactInfo">
                 <p>435-123-1234</p>
                 <p>info@ivinschamber.com</p>
             </div>
         </div>
+        <hr>
         <div id="devInfo">
             <p>&copy; <span id="copyrightYear"></span> | Randy Lee | WDD 230 Web Project</p>
             <p id="lastModified"></p>
@@ -139,5 +203,7 @@
     <script src="scripts/hamButton.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

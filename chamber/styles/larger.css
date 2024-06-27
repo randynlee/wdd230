@@ -210,6 +210,10 @@ figcaption {
     margin-bottom: 50px;
 } */
 
+#weather-forecast {
+    display: inline-flex;
+    padding-top: 10px;
+}
 
     footer {
         grid-column: 1/-1;

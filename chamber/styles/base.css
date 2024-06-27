@@ -25,6 +25,15 @@ header {
     display: none;
 }
 
+.joinButton a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+.memberButton a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
 
 #mode {
     display: inline-block;
@@ -141,6 +150,11 @@ main {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
+}
+.heroButton a:link, a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 #contactMsg h4 {
@@ -159,6 +173,15 @@ main {
     overflow: hidden;
     text-align: center;
     padding: 10%;
+}
+#eventBox li {
+    list-style-type: none;
+}
+#joinBox a {
+    color: black;
+}
+#aboutBox a {
+    color: black;
 }
 .boxImage {
     border-radius: 50%;
@@ -422,6 +445,36 @@ footer {
     margin: 20px;
   }
 
+  .weather{
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  #weather-icon{
+    height: 50px;
+    max-width: 100%;
+    margin: -10px;
+  }
+
+  #chamberBanner {
+    display: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(141, 70, 70);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  #closeButton {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+  }
 
 #footerInfo {
     display: flex;
