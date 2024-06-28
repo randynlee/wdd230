@@ -220,6 +220,16 @@ main {
     #logoInfo, #addressInfo, #contactInfo {
         margin-bottom: 20px;
     }
+    #membershipTable {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    #membershipTable td, th {
+        overflow-wrap: break-word;
+        font-size: 12px;
+    }
+
 }
 #chamberAbout, #chamberDemo, #chamberEconomy, #chamberEmployment, #chamberArts {
     box-shadow: 4px 5px 10px #2ea6bc;

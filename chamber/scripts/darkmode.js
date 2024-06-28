@@ -20,6 +20,7 @@ if (modeButton.textContent.includes("🌒")) {
 	contactMsg.style.color = "#eee";
 	contact.style.color = "#eee";
 	}
+
 	header.style.background = "#000";
 
 	modeButton.textContent = "🌙";
@@ -39,6 +40,7 @@ if (modeButton.textContent.includes("🌒")) {
 	contactMsg.style.color = "#000";
 	contact.style.color = "#000";
 	}
+
 	header.style.background = "#f9faf9";
 
 	modeButton.textContent = "🌒";

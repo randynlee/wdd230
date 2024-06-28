@@ -17,16 +17,18 @@
     <meta property="og:url" content="https://randynlee.github.io/wdd230/chamber/">
 </head>
 <body>
-    <header>
-       <picture>
-        <source media="(min-width:650px)" srcset="images/ivins-city-chamber.webp">
-        <source media="(min-width:465px)" srcset="images/ivins-city-chamber100.webp">
-        <img src="iimages/ivins-city-chamber.webp" alt="Ivins Chamber Logo" style="width:auto;">
-      </picture>
-       <button class="joinButton">Join Us</button>
-       <button class="memberButton">Member Directory</button>
-       <div id="mode">🌒</div>
-    </header>
+  <header>
+    <a href="index.html">
+     <picture>
+     <source media="(min-width:650px)" srcset="images/ivins-city-chamber.webp">
+     <source media="(min-width:465px)" srcset="images/ivins-city-chamber100.webp">
+     <img src="iimages/ivins-city-chamber.webp" alt="Ivins Chamber Logo" style="width:auto;">
+   </picture>
+   </a>
+   <div class="joinButton"><a href="join.html">Join Us</a></div>
+   <div class="memberButton"><a href="directory.html">Member Directory</a></div> 
+    <div id="mode">🌒</div>
+ </header>
     <button id="menu" title="Hamburger Button"></button>
     <nav>
     <ul class="navigation">
@@ -42,7 +44,7 @@
             <P>We aim to make business more profitable and make Ivins a better place to live, work and play. Ivins' most successful businesses understand the benefits of Chamber membership. We invite you to become a part of our dynamic organization</P>
         </div>
         <div id="memberType">
-            <table>
+            <table id="membershipTable">
                 <caption>
                     Membership Types and Fees
                   </caption>
@@ -133,7 +135,7 @@
                 <legend>Applicant Information</legend>
                 <label>First name: <input type="text" name="fname" id="fname" placeholder="Enter your first name" required></label>
                 <label>Last name: <input type="text" name="lname" id="lname" placeholder="Enter your last name" required></label>
-                <label>Title or position: <input type="text" name="title" id="title" placeholder="Enter title or position" pattern="[a-zA-Z -]{7,}" title="Only alpha characters, hyphens, and spaces with a minimum of seven characters are allowed." required></label>
+                <label>Title or position: <input type="text" name="title" id="title" placeholder="Enter title or position" pattern="[a-zA-Z\- ]{7,}" title="Only alpha characters, hyphens, and spaces with a minimum of seven characters are allowed." required></label>
                 <label>Email address: <input type="email" name="email" id="email" placeholder="example@example.com" required></label>
                 <label>Mobile Phone Number: <input type="tel" name="mobilePhone" id="mobilePhone" placeholder="Enter a mobile number" required></label>
             </fieldset>
@@ -160,25 +162,26 @@
         </div>
     </main>
     <footer>
-        <div id="footerInfo">
-            <div id="logoInfo">
-                <img src="images/ivins-city-chamber100.webp" alt="Chamber logo">
-            </div>
-            <div id="addressInfo">
-                <h4>Ivins Chamber of Commerce</h4>
-                <p>150 N Main St</p>
-                <p>Ivins Utah, 98471</p>
-            </div>
-            <div id="contactInfo">
-                <p>435-123-1234</p>
-                <p>info@ivinschamber.com</p>
-            </div>
-        </div>
-        <div id="devInfo">
-            <p>&copy; <span id="copyrightYear"></span> | Randy Lee | WDD 230 Web Project</p>
-            <p id="lastModified"></p>
-        </div>
-    </footer>
+      <div id="footerInfo">
+          <div id="logoInfo">
+              <a href="index.html"><img src="images/ivins-city-chamber100.webp" alt="Chamber logo"></a>
+          </div>
+          <div id="addressInfo">
+              <h4>Ivins Chamber of Commerce</h4>
+              <p>150 N Main St</p>
+              <p>Ivins Utah, 84738</p>
+          </div>
+          <div id="contactInfo">
+              <p>435-123-1234</p>
+              <p>info@ivinschamber.com</p>
+          </div>
+      </div>
+      <hr>
+      <div id="devInfo">
+          <p>&copy; <span id="copyrightYear"></span> | Randy Lee | WDD 230 Web Project</p>
+          <p id="lastModified"></p>
+      </div>
+  </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamButton.js"></script>
     <script src="scripts/darkmode.js"></script>
