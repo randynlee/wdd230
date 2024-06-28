@@ -190,6 +190,35 @@ main {
 #canyonPic {
     border-radius: 20px;
 }
+#current-temp {
+    font-size: 20px;
+    font-weight: bold;
+}
+#forecast-day-1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+#forecast-temp-1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+#forecast-day-2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+#forecast-temp-2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+#forecast-day-3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+#forecast-temp-3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
 @media (max-width: 640px) {
     #imageBox {
         display: none;
