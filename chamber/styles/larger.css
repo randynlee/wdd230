@@ -73,17 +73,30 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
+
+    #hero-box {
+        position: relative;
+        margin: auto;
+        grid-column: 1 / -1;
+        width: 100%;
+ 
+    }
+    .hero-image {
+        max-height: 580px;
+        object-fit: cover;
+        width: auto;
+ 
+    }
+
     .heroButton {
         font-size: 1.5rem;
         border: 0;
         position: relative;
         padding: 10px;
     }
-    .hero-msg {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
+ /* .hero-msg {
+        background: rgba(0, 0, 0, 0.3);
+    }  */
     .hero-msg h1 {
         font-size: 3.5em;
     }
@@ -193,31 +206,11 @@ figcaption {
 #membersInfo{
     grid-column: 1/-1;
 }
-/* .list {
-    grid-column: 1/-1;
-} */
 
-/* #members-container {
-    grid-column: 1/-1;
-
-} */
-
-/*.directoryBox {
-    display: inline-block;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-    margin-right: 50px;
-    margin-bottom: 50px;
-} */
 
 #weather-forecast {
     display: inline-flex;
     padding-top: 10px;
 }
-
-    footer {
-        grid-column: 1/-1;
-        grid-row: 8/9;
-    }
 
 }

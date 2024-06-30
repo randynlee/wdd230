@@ -17,7 +17,6 @@ body {
 }
 
 header {
-    grid-column: 1 / 3;
     display: flex;
 }
 
@@ -103,22 +102,27 @@ main {
 #hero-box {
     position: relative;
     margin: auto;
-    grid-column: 1 / -1;
     width: 100%;
-}
-.hero-image {
-    max-height: 550px;
+} 
+ .hero-image {
+    max-height: 230px;
     object-fit: cover;
     width: auto;
 } 
-
+#hero-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
 .hero-msg {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.3);
     color: white;
     padding: 20px;
     position: absolute;
@@ -126,7 +130,7 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-}
+} 
 .hero-msg h1 {
     margin: 0;
     font-size: 1.2em;
@@ -436,6 +440,10 @@ footer {
   .grid section > * {
     margin: 0.1rem;
   }
+  .grid section a {
+    text-decoration: none;
+    color: black;
+  }
   .grid h3 {
     margin: 20px;
   }
@@ -446,7 +454,7 @@ footer {
   }
   .list section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     margin: 0;
     padding: 0.25rem;
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -463,26 +471,11 @@ footer {
   .list section h3 {
     font-size: 1rem;
   }
-  .directory-main section h3 {
-    font-size: 1.5rem;
+  .list section a {
+    text-decoration: none;
+    color: black;
   }
-  .directory-main section p {
-    font-size: 16px;
-    font-weight: 600;
-    font-size: smaller;
-    padding-bottom: 20px;
-  }
-  .directory-main section a {
-    font-size: 0.85rem;
-    letter-spacing: 1.1pt;
-  }
-  .directory-main img {
-    height: 75px;
-    max-width: 100%;
-    background-color: #fff;
-    border-radius: 16px;
-    margin: 20px;
-  }
+
 
   .weather{
     border: 1px solid black;

@@ -26,7 +26,7 @@ fetch("data/members.json")
         <p>${company.address}</p>
         <p>Phone: ${company.phone}</p>
         <p>Membership Level: ${company.membershipLevel}</p>
-        <p style="font-style: italic; font-weight: bold;">${company.otherInformation}</p>
+        
         <strong><a href="${company.website}" target="_blank">Website</a></strong>
       `;
 
