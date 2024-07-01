@@ -490,7 +490,7 @@ footer {
 
   #chamberBanner {
     display: none;
-    position: sticky;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -507,7 +507,7 @@ footer {
     right: 10px;
     cursor: pointer;
   }
-
+ 
 #footerInfo {
     display: flex;
     justify-content: space-around;
