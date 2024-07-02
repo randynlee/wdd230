@@ -57,35 +57,6 @@ localStorage.setItem("last-visit", new Date().toString());
 
 
 
-
-
-
-
-
-
-/* const visitsDisplay = document.querySelector('.visits');
-
-const welcomeMsg = 'Welcome! Let us know if you have any questions.';
-const welcomeBk = 'Back so soon! Awesome!';
-const lastVisited = 'You last visited [n] days ago.';
-
-const ToDay = (1000 * 60 * 60 * 24);
-
-let lastVisit = Number(JSON.parse(localStorage.getItem(visitTimeStamp)));
-const currentTime = Date.now();
-
-if (lastVisit) {
-    const pastDays = Math.abs(Math.trunc((currentTime - lastVisit) / ToDay));
-    if (pastDays === 0) {
-        visitsDisplay.innerHTML = welcomeBk;
-    } else {
-        visitsDisplay.innerHTML = lastVisited.replace('[n]', pastDays);
-    }
-    } else {
-        visitsDisplay.innerHTML = welcomeMsg;
-        localStorage.setItem('visitTimeStamp', JSON.stringify(currentTime));
-    }; */
-
     
     
     
