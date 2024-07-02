@@ -6,5 +6,5 @@ document.getElementById("lastModified").innerHTML = "Last Modification: " + text
 document.getElementById("copyrightYear").innerHTML = new Date().getFullYear();
 
 
-var currentDate = new Date();
-document.getElementById('timeStamp').value = currentDate;
+// var currentDate = new Date();
+// document.getElementById('timeStamp').value = currentDate;
