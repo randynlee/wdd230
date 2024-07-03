@@ -437,6 +437,7 @@ footer {
     overflow: hidden;
     transition: transform 0.3s;
     max-width: 258px;
+    height: auto;
   }
   .grid section > * {
     margin: 0.1rem;
