@@ -21,7 +21,7 @@ fetch("data/members.json")
     data.forEach((company) => {
       const companyDiv = document.createElement("section");
       companyDiv.innerHTML = `
-        <img src="${company.image}" alt="${company.name}" />
+        <img src="${company.image}" alt="${company.name}" loading="lazy" />
         <h3>${company.name}</h3>
         <p>${company.address}</p>
         <p>Phone: ${company.phone}</p>
