@@ -1,10 +1,10 @@
-const modeButton = document.querySelector("#mode");
+/* const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 const header = document.querySelector("header");
-const element = document.getElementById("joinBox");
+const element = document.getElementById("joinBox"); */
 
 
-modeButton.addEventListener("click", () => {
+/* modeButton.addEventListener("click", () => {
 if (modeButton.textContent.includes("🌒")) {
 	//main page
 	main.style.background = "#000";
@@ -45,4 +45,27 @@ if (modeButton.textContent.includes("🌒")) {
 
 	modeButton.textContent = "🌒";
 }
+}); */
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modeButton = document.querySelector("#mode");
+    const body = document.querySelector("body");
+	const main = document.querySelector("main");
+	const header = document.querySelector("header");
+
+    modeButton.addEventListener("click", () => {
+        if (modeButton.textContent.includes("🌒")) {
+		body.classList.toggle('dark-mode');
+		modeButton.textContent = "🌙";
+	}else{
+		modeButton.textContent = "🌒";
+		main.style.background = "#eee";
+		header.style.background = "#f9faf9";
+		body.classList.remove('dark-mode');
+	};
+
+
+    });
 });
