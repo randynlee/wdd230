@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+--white: #FFFFFFff;
+--white-2: #FFFFFFff;
+--ultra-violet: #6D6D93ff;
+--keppel: #55BFABff;
+--gold-metallic: #DCBA64ff;
+}
+
+body {
+    background-color: #FFFFFFff;
+    font-family: 'Roboto', 'Lucida Grande', sans-serif;
+    font-size: 18px;
+}
+
+/*------------------------- header --------------------------------------*/
+
+header {
+    display: flex;
+}
+.socialMedia {
+    display: none;
+}
+
+
+/*--------------------------- navbar -------------------------------------*/
+
+/* hamburger menu */
+#menu {
+    display: block;
+    font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+    margin-inline: auto;
+}
+
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "❌";
+}
+/*----------------*/
+
+nav {
+    background-color: #55BFABff;
+}
+nav ul {
+    display: none;
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    background-color: #DCBA64ff;
+    color: black;
+}
+.nav {
+    display: none;
+}
+nav.open ul {
+    display: flex;
+    flex-direction: column;
+}
+.nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*--------------------- main index ----------------------------*/
+#heroBox {
+    width: 100%;
+    height: auto;
+}
+main {
+    overflow: hidden;
+}
+#hero-msgBg {
+    top: 0;
+    left: 0px;
+    padding: 20px;
+    color: black;
+    
+    font-family: 'Acme', 'Lucida Grande', sans-serif;
+    width: 800px
+  }
+  .heroButton {
+    padding: 20px 20px;
+    font-size: 1em;
+    background-color: #6D6D93ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 180px;
+    margin-top: 20px;
+}
+.heroButton a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+.vehicleImage {
+    width: 200px;
+    height: 150px;
+}
+
+#type-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#type-container div {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/*---------------------- footer -------------------------------*/
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    padding: 3%;
+    transition: 0.2s ease-in-out;
+  }
+  footer a {
+    color: #6D6D93ff;
+    margin: 2px;
+  }
+  footer a:hover {
+  color: #DCBA64ff;
+}
+
+
+
+
+
+
+@media (max-width: 640px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+

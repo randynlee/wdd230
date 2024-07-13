@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Cozumel Rental Services</title>
+    <meta name="author" content="Randy Lee">
+    <meta name="description" content="Scoots rental is a perfect way to experience Cozumel. Scooter rentals, Jeep rentals, and ATV rentals, Scoots rentals are a fun activity.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Scoots - Cozumel Rental Services">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://randynlee.github.io/wdd230/images/salt-lake-city.jpg">
+    <meta property="og:url" content="https://randynlee.github.io/wdd230/">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(min-width:650px)" srcset="images/scootsLogo.webp">
+            <source media="(min-width:465px)" srcset="images/scootsLogox221.webp">
+            <img id="scootLogo" src="images/scootsLogo.webp" alt="Scoots Logo">
+        </picture>
+        <div class="socialMedia">
+            <a href="#"><img src="images/facebookIcon.webp" alt="Facebook image"></a> 
+            <a href="#"><img src="images/instagramIcon.webp" alt="Instagram image"></a>
+            <a href="#"><img src="images/twitterIcon.webp" alt="Twitter image"></a>
+            <a href="#"><img src="images/youtubeIcon.webp" alt="Youtube icon"></a>
+        </div>
+    </header>
+    <button id="menu" title="Hamburger Button"></button>
+    <nav>     
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="home-grid">
+        <div id="HeroBox">
+            <picture class="hero-image">
+                <source media="(max-width: 505px)" srcset="images/heroImageCozumelx510.png">
+                <source media="(max-width: 800px)" srcset="images/heroImageCozumelx800.png">
+                <img src="images/heroImageCozumel.png" alt="Punta Sur">
+            </picture>
+            <div id="hero-msgBg">
+                <h1>Scooters, Jeeps & ATV Rentals</h1>
+                <br>
+                <h3>You can ditch the touristy western part of the island and check out the awesome coasts and inlets on the southern and eastern shores using our cool motorized vehicles.</h3>
+                <div class="heroButton"><a href="reservations.html">Reserve Your Ride!</a></div>
+            </div>
+        </div>
+        <div class="imageDivider">
+            <picture>
+                <source media="(max-width: 505px)" srcset="images/scenicBeachx510.png">
+                <source media="(max-width: 800px)" srcset="images/scenicBeachx800.png">
+                <img src="images/scenicBeach.png" alt="Scenic Beach">
+            </picture>   
+        </div>
+        <div>
+            <h1>Rental Types</h1>
+        </div>
+        <div id="type-container" class="type-rental">          
+            <div id="typeScooters">
+                <img class="vehicleImage" src="images/Honda-DIO.webp" alt="Honda DIO">
+                <h3>Scooters</h3>
+                <P>Get ready to explore new routes and overcome
+                    obstacles with confidence.</P>
+            </div>
+            <div id="typeJeeps">
+                <img class="vehicleImage" src="images/Honda-Pioneer-1000.webp" alt="Honda Pioneer 1000">
+                <h3>ATV</h3>
+                <p>Get ready to explore new routes and overcome
+                    obstacles with confidence.</p>
+            </div>
+            <div id="typeAtv">
+                <img class="vehicleImage" src="images/Jeep-Wrangler-4-Door.webp" alt="Jeep Wrangler 4-Door">
+               <h3>Jeeps</h3>
+                <p>Immerse yourself in adventure
+                    with the Jeep Wrangler and discover a world of odds.</p>
+            </div>
+        </div>
+        <div class="imageDivider">
+            <picture>
+                <source media="(max-width: 505px)" srcset="images/scenicRoad2x510.png">
+                <source media="(max-width: 800px)" srcset="images/scenicRoad2x800.png">
+                <img src="images/scenicRoad2.png" alt="Scenic Road">
+            </picture>           
+        </div>
+        <div id="weatherToday">
+            <span id="current-temp"></span>
+            <figure>
+                <img id="weather-icon" src="images/w01d.png" alt="Weather Icon">
+                <figcaption id="fig1" class="weather-fig-captions"></figcaption>
+            </figure>
+       </div>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="copyrightYear"></span> | Randy Lee |
+            <a href="rentals.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="reservations.com">Reserve</a> 
+        </div>
+    </footer>
+    <script src="scripts/hamButton.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
