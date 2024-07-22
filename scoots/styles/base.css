@@ -6,14 +6,6 @@
     box-sizing: border-box;
   }
 
-:root {
---white: #FFFFFFff;
---white-2: #FFFFFFff;
---ultra-violet: #6D6D93ff;
---keppel: #55BFABff;
---gold-metallic: #DCBA64ff;
-}
-
 body {
     background-color: #FFFFFFff;
     font-family: 'Roboto', 'Lucida Grande', sans-serif;
@@ -132,14 +124,12 @@ main {
     width: 190px;
     margin-top: 20px;
 }
-.heroButton a:link, a:visited {
+.heroButton a:link {
     text-decoration: none;
+}
+.heroButton a:visited {
     color: white;
 }
-/* .vehicleImage {
-    width: 100px;
-    height: 50px;
-} */
 #typeHeader {
     margin-top: 20px;
     max-width: fit-content;
@@ -169,9 +159,11 @@ main {
     width: 20px;
     margin-top: 20px;
 }
-.vehicleButton a:link, a:visited {
-    text-decoration: none;
+.vehicleButton a:visited {
     color: white;
+}
+.vehicleButton a:link {
+    text-decoration: none;
 }
 #weatherHeader {
     margin-top: 20px;
