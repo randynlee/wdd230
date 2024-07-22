@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Contact Us Page</title>
+    <meta name="author" content="Randy Lee">
+    <meta name="description" content="Scoots rental is a perfect way to experience Cozumel. Scooter rentals, Jeep rentals, and ATV rentals, Scoots rentals are a fun activity.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Scoots - Cozumel Rental Services">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://randynlee.github.io/wdd230/images/salt-lake-city.jpg">
+    <meta property="og:url" content="https://randynlee.github.io/wdd230/">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <picture>
+            <source media="(min-width:650px)" srcset="images/scootsLogo.webp">
+            <source media="(min-width:465px)" srcset="images/scootsLogox221.webp">
+            <img id="scootLogo" src="images/scootsLogo.webp" alt="Scoots Logo">
+        </picture>
+        </a>
+        <div class="socialMedia">
+            <a href="#"><img src="images/facebookIcon.webp" alt="Facebook image"></a> 
+            <a href="#"><img src="images/instagramIcon.webp" alt="Instagram image"></a>
+            <a href="#"><img src="images/twitterIcon.webp" alt="Twitter image"></a>
+            <a href="#"><img src="images/youtubeIcon.webp" alt="Youtube icon"></a>
+        </div>
+    </header>
+    <button id="menu" title="Hamburger Button"></button>
+    <nav>     
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="contactHeader">
+            <h1>Contact Us</h1>
+        </div>
+        <div id="contact-container">
+            <div id="contactInfo">
+                <h3>Our info</h3><br>
+                <p><img src="images/iconMail.webp" alt="Mail Icon" loading="lazy"> info@scoots.com</p><br>
+                <p><img src="images/iconPhone.webp" alt="Phone Icon" loading="lazy"> +52 987 123 1234</p><br>
+                <p><img src="images/iconStreetSign.webp" alt="Street Sign Icon" loading="lazy"> Our Convient Locations:</p><br>
+                <p>Centro Location: Quintana Roo C-1 1a, 77675 Cozumel, Q.R., Mexico</p>
+                <p>Terminal Maritima: C. 1 Sur 16, Centro, 77600 Cozumel, Q.R., Mexico</p><br>
+                <p><img src="images/iconHours.webp" alt="Clock Icon" loading="lazy"> Operating Hours:</p>
+                <p>Monday to Sunday: 8:00 AM - 9:00 PM</p>
+            </div>
+            <div id="contactForm">
+                <form method="get" action="thankyou.html" class="wf1">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label>First name: <input type="text" name="fname" id="fname" placeholder="Enter your first name" required></label>
+                        <label>Last name: <input type="text" name="lname" id="lname" placeholder="Enter your last name" required></label>
+                        <label>Email address: <input type="email" name="email" id="email" placeholder="example@example.com" required></label>
+                        <label for="accomodations">Comments:</label>
+                        <textarea id="accomodations" name="accomodations" placeholder="We appreciate any comments."></textarea>
+                    </fieldset>
+                    <input type="submit" value="Send Us Your Info" class="formButton">
+                </form>
+            </div>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1rARxf_yGjREEUhmVZae6sMZuyDVq9Co&ehbc=2E312F&noprof=1" width="1600" height="480" loading="async"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="copyrightYear"></span> | Randy Lee |
+            <a href="rentals.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="reservations.com">Reserve</a> 
+        </div>
+    </footer>
+    <script src="scripts/hamButton.js"></script>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>

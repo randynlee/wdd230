@@ -1,0 +1,59 @@
+{
+    "vehicles": [
+        {
+            "type": "Honda Metro Scooter",
+            "capacity": 1,
+            "halfDay": "$20",
+            "fullDay": "$30",
+            "halfDayWalkin": "$25",
+            "fullDayWalkin": "$35",
+            "imageurl": "images/honda-metropolitanx340Card.webp"
+        },
+        {
+            "type": "Honda Dio Scooter",
+            "capacity": 2,
+            "halfDay": "$30",
+            "fullDay": "$40",
+            "halfDayWalkin": "$35",
+            "fullDayWalkin": "$45",
+            "imageurl": "images/Honda-DIOx340Card.webp"
+        },
+        {
+            "type": "Honda PCX150 Scooter",
+            "capacity": 2,
+            "halfDay": "$40",
+            "fullDay": "$50",
+            "halfDayWalkin": "$45",
+            "fullDayWalkin": "$55",
+            "imageurl": "images/honda-pcx340Card.webp"
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "capacity": 4,
+            "halfDay": "$50",
+            "fullDay": "$70",
+            "halfDayWalkin": "$60",
+            "fullDayWalkin": "$80",
+            "imageurl": "images/Honda-Pioneer-1000x340Card.webp"
+        },
+        {
+            "type": "Jeep Wrangler - 4 door with a/c",
+            "capacity": 5,
+            "halfDay": "$70",
+            "fullDay": "$100",
+            "halfDayWalkin": "$85",
+            "fullDayWalkin": "$125",
+            "imageurl": "images/Jeep-Wrangler-4-Doorx340Card.webp"
+        },
+        {
+            "type": "Jeep Wrangler - 2 door",
+            "capacity": 4,
+            "halfDay": "$60",
+            "fullDay": "$85",
+            "halfDayWalkin": "$70",
+            "fullDayWalkin": "$90",
+            "imageurl": "images/2-door-2016-jeep-wranglerx340Card.webp"
+        }
+        
+    ]
+}

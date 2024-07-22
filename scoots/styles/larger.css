@@ -38,8 +38,14 @@
         top: 1rem;
     }
    /*---------------------- main ----------------------------*/
-   /* main #hero-msgBg {
-        top: 210px;
-        width: 800px
-    } */
+    #hero-msgBg {
+        width: 800px;
+    }
+    .vehicleButton {
+        font-size: 1em;
+        width: 120px;
+    }
+    #VehicleTypeButton {
+        display: none;
+    }
 }

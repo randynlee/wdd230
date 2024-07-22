@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Rental Page</title>
+    <meta name="author" content="Randy Lee">
+    <meta name="description" content="Scoots rental is a perfect way to experience Cozumel. Scooter rentals, Jeep rentals, and ATV rentals, Scoots rentals are a fun activity.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Scoots - Cozumel Rental Services">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://randynlee.github.io/wdd230/images/salt-lake-city.jpg">
+    <meta property="og:url" content="https://randynlee.github.io/wdd230/">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <picture>
+            <source media="(min-width:650px)" srcset="images/scootsLogo.webp">
+            <source media="(min-width:465px)" srcset="images/scootsLogox221.webp">
+            <img id="scootLogo" src="images/scootsLogo.webp" alt="Scoots Logo">
+        </picture>
+        </a>
+        <div class="socialMedia">
+            <a href="#"><img src="images/facebookIcon.webp" alt="Facebook image"></a> 
+            <a href="#"><img src="images/instagramIcon.webp" alt="Instagram image"></a>
+            <a href="#"><img src="images/twitterIcon.webp" alt="Twitter image"></a>
+            <a href="#"><img src="images/youtubeIcon.webp" alt="Youtube icon"></a>
+        </div>
+    </header>
+    <button id="menu" title="Hamburger Button"></button>
+    <nav>     
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="rentalHeader">
+            <h1>Adventurous Rental Types</h1>
+        </div>
+        <div class="table-div">
+            <div id="json-table"></div>
+        </div>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="copyrightYear"></span> | Randy Lee |
+            <a href="rentals.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="reservations.com">Reserve</a> 
+        </div>
+    </footer>
+    <script src="scripts/hamButton.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/vehicles.js"></script>
+</body>
+</html>

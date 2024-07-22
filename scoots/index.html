@@ -16,12 +16,20 @@
     <meta property="og:url" content="https://randynlee.github.io/wdd230/">
 </head>
 <body>
+    <div id="weatherBanner" class="weather-banner">
+        <div>
+            <strong>Todays max temperature: </strong><span id="max-temp"></span>
+        </div>
+        <span id="closeButton" onclick="closeBanner()">✖</span>
+    </div>
     <header>
+        <a href="index.html">
         <picture>
             <source media="(min-width:650px)" srcset="images/scootsLogo.webp">
             <source media="(min-width:465px)" srcset="images/scootsLogox221.webp">
             <img id="scootLogo" src="images/scootsLogo.webp" alt="Scoots Logo">
         </picture>
+        </a>
         <div class="socialMedia">
             <a href="#"><img src="images/facebookIcon.webp" alt="Facebook image"></a> 
             <a href="#"><img src="images/instagramIcon.webp" alt="Instagram image"></a>
@@ -41,9 +49,9 @@
     <main id="home-grid">
         <div id="HeroBox">
             <picture class="hero-image">
-                <source media="(max-width: 505px)" srcset="images/heroImageCozumelx510.png">
-                <source media="(max-width: 800px)" srcset="images/heroImageCozumelx800.png">
-                <img src="images/heroImageCozumel.png" alt="Punta Sur">
+                <source media="(max-width: 505px)" srcset="images/heroImageCozumelx510.webp">
+                <source media="(max-width: 800px)" srcset="images/heroImageCozumelx800.webp">
+                <img src="images/heroImageCozumel.webp" alt="Punta Sur">
             </picture>
             <div id="hero-msgBg">
                 <h1>Scooters, Jeeps & ATV Rentals</h1>
@@ -54,48 +62,91 @@
         </div>
         <div class="imageDivider">
             <picture>
-                <source media="(max-width: 505px)" srcset="images/scenicBeachx510.png">
-                <source media="(max-width: 800px)" srcset="images/scenicBeachx800.png">
-                <img src="images/scenicBeach.png" alt="Scenic Beach">
+                <source media="(max-width: 505px)" srcset="images/scenicBeachx510.webp">
+                <source media="(max-width: 800px)" srcset="images/scenicBeachx800.webp">
+                <img src="images/scenicBeach.webp" alt="Scenic Beach" loading="lazy">
             </picture>   
         </div>
-        <div>
-            <h1>Rental Types</h1>
+        <div id="typeHeader">
+            <h1>Adventurous Rental Types</h1>
         </div>
         <div id="type-container" class="type-rental">          
             <div id="typeScooters">
-                <img class="vehicleImage" src="images/Honda-DIO.webp" alt="Honda DIO">
+                <picture>
+                    <source srcset="images/Honda-DIOx125.webp" media="(max-width: 505px)">
+                    <img class="vehicleImage" src="images/Honda-DIOx200.webp" alt="Honda DIO" loading="lazy">
+                </picture>
                 <h3>Scooters</h3>
-                <P>Get ready to explore new routes and overcome
-                    obstacles with confidence.</P>
+                <br>
+                <P>Check out our super sleek scooters designed for an amazing driving experience. Cruise around the island in style and comfort - it's the perfect way to explore!</P>
+                <div class="vehicleButton"><a href="rentals.html">Rates On This Ride</a></div>
             </div>
             <div id="typeJeeps">
-                <img class="vehicleImage" src="images/Honda-Pioneer-1000.webp" alt="Honda Pioneer 1000">
+                <picture>
+                    <source srcset="images/Honda-Pioneer-1000x150.webp" media="(max-width: 505px)">
+                    <img class="vehicleImage" src="images/Honda-Pioneer-1000x200.webp" alt="Honda Pioneer 1000" loading="lazy">
+                </picture>
                 <h3>ATV</h3>
-                <p>Get ready to explore new routes and overcome
-                    obstacles with confidence.</p>
+                <br>
+                <p>Get ready for some off-road fun with our ATV. It's built to tackle any terrain with power, durability, and control. Explore new routes and conquer obstacles with confidence.</p>
+                <div class="vehicleButton"><a href="rentals.html">Rates On This Ride</a></div>
             </div>
             <div id="typeAtv">
-                <img class="vehicleImage" src="images/Jeep-Wrangler-4-Door.webp" alt="Jeep Wrangler 4-Door">
-               <h3>Jeeps</h3>
-                <p>Immerse yourself in adventure
-                    with the Jeep Wrangler and discover a world of odds.</p>
+                <picture>
+                    <source srcset="images/Jeep-Wrangler-4-Doorx150.webp" media="(max-width: 505px)">
+                    <img class="vehicleImage" src="images/Jeep-Wrangler-4-Doorx200.webp" alt="Jeep Wrangler 4-Door" loading="lazy">
+                </picture>
+                <h3>Jeeps</h3>
+               <br>
+                <p>Get ready for an adventure with the Jeep Wrangler and see the island from a whole new perspective.</p>
+                <div class="vehicleButton"><a href="rentals.html">Rates On This Ride</a></div>
             </div>
+            <div id="VehicleTypeButton" class="vehicleButton"><a href="reservations.html">Info On These Rides</a></div>
         </div>
         <div class="imageDivider">
             <picture>
-                <source media="(max-width: 505px)" srcset="images/scenicRoad2x510.png">
-                <source media="(max-width: 800px)" srcset="images/scenicRoad2x800.png">
-                <img src="images/scenicRoad2.png" alt="Scenic Road">
+                <source media="(max-width: 505px)" srcset="images/scenicRoad2x510.webp">
+                <source media="(max-width: 800px)" srcset="images/scenicRoad2x800.webp">
+                <img src="images/scenicRoad2.webp" alt="Scenic Road" loading="lazy">
             </picture>           
         </div>
+        <div id="weatherHeader">
+            <h1>Our Island Weather</h1>
+        </div> 
+        <div class="weather" id="weather-forecast">
         <div id="weatherToday">
-            <span id="current-temp"></span>
+            <span>Today </span><span id="current-temp"></span>
             <figure>
                 <img id="weather-icon" src="images/w01d.png" alt="Weather Icon">
                 <figcaption id="fig1" class="weather-fig-captions"></figcaption>
+                <figcaption id="fig5" class="weather-fig-captions"></figcaption>
             </figure>
        </div>
+        <div>
+            <span id="forecast-day-1"></span>
+            <span id="forecast-temp-1"></span>
+            <figure>
+                <img id="weather-icon1" src="images/w01d.png" class="w-icon" alt="weather icon">
+                <figcaption id="fig2" class="weather-fig-captions"></figcaption>
+            </figure>
+        </div>
+        <div>
+            <span id="forecast-day-2"></span>
+            <span id="forecast-temp-2"></span>
+            <figure>
+                <img id="weather-icon2" src="images/w01d.png" class="w-icon" alt="Weather Icon">
+                <figcaption id="fig3" class="weather-fig-captions"></figcaption>
+            </figure>
+        </div>
+        <div>
+            <span id="forecast-day-3"></span>
+            <span id="forecast-temp-3"></span>
+            <figure>
+                <img id="weather-icon3" src="images/w01d.png" class="w-icon" alt="Weather Icon">
+                <figcaption id="fig4" class="weather-fig-captions"></figcaption>
+            </figure>
+        </div>
+    </div>
     </main>
     <footer>
         <div>
@@ -108,5 +159,6 @@
     <script src="scripts/hamButton.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

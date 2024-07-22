@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Reservations Page</title>
+    <meta name="author" content="Randy Lee">
+    <meta name="description" content="Scoots rental is a perfect way to experience Cozumel. Scooter rentals, Jeep rentals, and ATV rentals, Scoots rentals are a fun activity.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Scoots - Cozumel Rental Services">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://randynlee.github.io/wdd230/images/salt-lake-city.jpg">
+    <meta property="og:url" content="https://randynlee.github.io/wdd230/">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <picture>
+            <source media="(min-width:650px)" srcset="images/scootsLogo.webp">
+            <source media="(min-width:465px)" srcset="images/scootsLogox221.webp">
+            <img id="scootLogo" src="images/scootsLogo.webp" alt="Scoots Logo">
+        </picture>
+        </a>
+        <div class="socialMedia">
+            <a href="#"><img src="images/facebookIcon.webp" alt="Facebook image"></a> 
+            <a href="#"><img src="images/instagramIcon.webp" alt="Instagram image"></a>
+            <a href="#"><img src="images/twitterIcon.webp" alt="Twitter image"></a>
+            <a href="#"><img src="images/youtubeIcon.webp" alt="Youtube icon"></a>
+        </div>
+    </header>
+    <button id="menu" title="Hamburger Button"></button>
+    <nav>     
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="reserveHeader">
+            <h1>Start Your Adventure Today</h1>
+        </div>
+        <div id="reserve-container">
+            <div class="terms">
+                <h3>Rental Services and Agreements</h3>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+                <picture>
+                    <source media="(min-width:650px)" srcset="images/scooterWithCouple.webp">
+                    <source media="(min-width:465px)" srcset="images/scooterWithCouplex300.webp">
+                    <img id="reserveImg" src="images/scooterWithCouple.webp" alt="Couple on Scooter" loading="lazy">
+                </picture>
+            </div>
+            <div id="reserveForm">
+                <form method="get" action="thankyou.html" class="wf1">
+                    <fieldset>
+                        <legend>Start Your Adventure</legend>
+                        <label>First name: <input type="text" name="fname" id="fname" placeholder="Enter your first name" required></label>
+                        <label>Last name: <input type="text" name="lname" id="lname" placeholder="Enter your last name" required></label>
+                        <label>Rental Date: <input type="text" id="datepicker" name="fecha" required /></label>
+                        <label>Email address: <input type="email" name="email" id="email" placeholder="example@example.com" required></label>
+                        <label>Mobile Phone Number: <input type="tel" name="mobilePhone" id="mobilePhone" placeholder="Enter a mobile number" required></label>
+                        <label>Cruise Line: <input type="text" name="cruiseLine" id="cruiseLine" placeholder="Enter Cruise Line if applicable"></label>
+                        <label>Select vehicle:
+                        <select id="selectVehicle" name="selectVehicle" required>
+                            <option value="" disabled selected>
+                          Select your preferred vehicle
+                            </option>
+                            <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                            <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                            <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                            <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                            <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                            <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                        </select>
+                        </label>
+                        <label>Select number of riders:
+                        <select id="numPeople" name="numPeople" required>
+                            <option value="" disabled selected>
+                          Select number of riders
+                            </option>
+                            <option value="1">1 person</option>
+                            <option value="2">2 people</option>
+                            <option value="3">3 people</option>
+                            <option value="4">4 people</option>
+                            <option value="5">5 people</option>
+                        </select>
+                        </label>
+                        <label for="accomodations">Special accommodations/comments:</label>
+                        <textarea id="accomodations" name="accomodations" placeholder="Special accommodations/comments such as the need and location of a drop-off request."></textarea>
+                    </fieldset>
+                    <input type="submit" value="Enter My Adventure" class="formButton">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="copyrightYear"></span> | Randy Lee |
+            <a href="rentals.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="reservations.com">Reserve</a> 
+        </div>
+    </footer>
+    <script src="scripts/hamButton.js"></script>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
